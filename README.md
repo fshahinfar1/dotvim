@@ -1,14 +1,14 @@
-```
-mv .vimrc ~/.vim/vimrc
-mv .gvimrc ~/.vim/gvimrc
+# .Vim
+This repository should help me to setup my environment for using vim in no time.
+I use vim builtin package manager so the minimum supported vim version is 8.
 
-ln -s ~/.vim/vimrc ~/.vimrc
-ln -s ~/.vim/gvimrc ~/.gvimrc
-```
+# Plugins
+1. airline 
+2. vim-clang
+3. vim-fugitive
+4. tagbar
+5. sensible
 
-To setup the modules:
+# Install
+Run install script.
 
-```
-git submodule init
-git submodule update
-```
