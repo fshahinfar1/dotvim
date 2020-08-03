@@ -9,6 +9,16 @@ if [ $? != 0 ]; then
   exit 1
 fi
 
+# install dependencies
+# clang and clang formatter
+# TODO: to be written
+if [ ! command -v clang &> /dev/null ]
+then
+	echo You need to install clang and clang-formatter.
+	echo After installing that rerty. 
+	exit
+fi
+
 backup_addr=$HOME/_vim_old/
 target_addr=$HOME/.vim/
 if [ -d $backup_addr ]; then
