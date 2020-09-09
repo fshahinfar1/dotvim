@@ -12,9 +12,9 @@ fi
 # install dependencies
 # clang and clang formatter
 # TODO: to be written
-if [ ! command -v clang &> /dev/null ]
+if [ ! `command -v clang &> /dev/null` ]
 then
-	echo You need to install clang and clang-formatter.
+	echo You need to install clang and clang-format.
 	echo After installing that rerty. 
 	exit
 fi

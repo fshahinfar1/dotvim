@@ -8,11 +8,15 @@ set cc=80
 syntax on
 filetype plugin indent on
 
-" uncomment the following to have Vim jump to the last position when
-" reopening a file
+" Vim jump to the last position when reopening a file
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
+
+" Show trailling white space
+:highlight ExtraWhitespace ctermbg=red guibg=red
+:match ExtraWhitespace /\s\+$/
+
 " ====================================================
 " syntastic default (recommended for beginners) config
 " ====================================================
@@ -39,7 +43,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'default'
-let g:airline_statusline_ontop=1
+" let g:airline_statusline_ontop=1
 
 let g:cpp_member_variable_highlight = 1
 let g:cpp_class_decl_highlight = 1
