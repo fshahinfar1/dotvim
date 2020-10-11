@@ -17,6 +17,13 @@ endif
 :highlight ExtraWhitespace ctermbg=red guibg=red
 :match ExtraWhitespace /\s\+$/
 
+" Load local vimrc
+set exrc
+set secure
+
+" Remove Trailing White Spaces
+map <F3> :%s/\s\+$//e<CR>
+
 " ====================================================
 " syntastic default (recommended for beginners) config
 " ====================================================
