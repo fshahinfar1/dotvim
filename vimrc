@@ -1,9 +1,12 @@
 " my simple configuration
 " ====================================================
-" set et
-" set ts=2
-" set sw=2
-" set number
+
+"  General indention policy
+set et
+set ts=4
+set sw=4
+" ================================
+
 set cc=80
 syntax on
 filetype plugin indent on
@@ -36,6 +39,19 @@ augroup numbertoggle
   autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END
+
+" Indetion policies
+" C
+" autocmd BufNewFile,BufRead set ts=8 set sw=8 set noexpandtab
+autocmd BufNewFile,BufRead *.c set ts=8 sw=8 noexpandtab
+autocmd BufNewFile,BufRead *.c nnoremap <C-p> :s/\(^\s*\)/\1\/\/ <cr>
+autocmd BufNewFile,BufRead *.c nnoremap <C-o> :s/\(^\s*\/\/ \)/<cr>
+" Bash
+autocmd BufNewFile,BufRead *.sh set ts=2  sw=2 noexpandtab
+autocmd BufNewFile,BufRead *.sh nnoremap <C-p> :s/\(^\s*\)/\1# <cr>
+autocmd BufNewFile,BufRead *.sh nnoremap <C-o> :s/\(^\s*# \)/<cr>
+
+" ====================================================
 
 " ====================================================
 " syntastic default (recommended for beginners) config
