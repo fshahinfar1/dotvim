@@ -46,10 +46,14 @@ augroup END
 autocmd BufNewFile,BufRead *.c set ts=8 sw=8 noexpandtab
 autocmd BufNewFile,BufRead *.c nnoremap <C-p> :s/\(^\s*\)/\1\/\/ <cr>
 autocmd BufNewFile,BufRead *.c nnoremap <C-o> :s/\(^\s*\/\/ \)/<cr>
+autocmd BufNewFile,BufRead *.c vnoremap <C-p> :s/\(^\s*\)/\1\/\/ <cr>
+autocmd BufNewFile,BufRead *.c vnoremap <C-o> :s/\(^\s*\/\/ \)/<cr>
 " Bash
 autocmd BufNewFile,BufRead *.sh set ts=2  sw=2 noexpandtab
 autocmd BufNewFile,BufRead *.sh nnoremap <C-p> :s/\(^\s*\)/\1# <cr>
 autocmd BufNewFile,BufRead *.sh nnoremap <C-o> :s/\(^\s*# \)/<cr>
+autocmd BufNewFile,BufRead *.sh vnoremap <C-p> :s/\(^\s*\)/\1# <cr>
+autocmd BufNewFile,BufRead *.sh vnoremap <C-o> :s/\(^\s*# \)/<cr>
 
 " ====================================================
 
