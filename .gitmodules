@@ -10,3 +10,6 @@
 [submodule "bundle/sensible"]
 	path = pack/plugins/start/sensible
 	url = https://github.com/tpope/vim-sensible
+[submodule "pack/plugins/start/commentary"]
+	path = pack/plugins/start/commentary
+	url = https://tpope.io/vim/commentary.git
