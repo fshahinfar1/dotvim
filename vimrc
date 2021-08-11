@@ -2,7 +2,7 @@
 " ====================================================
 
 "  General indention policy
-set et
+" set et
 set ts=4
 set sw=4
 " ================================
@@ -63,7 +63,7 @@ let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'default'
 " let g:airline_statusline_ontop=1
 
-#Thanks to @sarsanaee
+" Thanks to @sarsanaee
 set list
-set listchars=eol:¬,tab:>·,extends:>,precedes:<
+set listchars=tab:>·,extends:>,precedes:<
 
