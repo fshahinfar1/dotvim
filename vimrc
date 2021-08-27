@@ -44,8 +44,10 @@ augroup END
 
 " Indetion policies
 " C
-autocmd BufNewFile,BufRead set ts=8 set sw=8 set noexpandtab
+" autocmd BufNewFile,BufRead set ts=8 set sw=8 set noexpandtab
 autocmd BufNewFile,BufRead *.c set ts=8 sw=8 noexpandtab
+" JS
+autocmd BufNewFile,BufRead *.js set ts=2 sw=2 expandtab
 " ====================================================
 
 " map <C-K> :pyf /home/alireza/clang-format.py<cr>
@@ -66,17 +68,20 @@ let g:airline#extensions#tabline#formatter = 'default'
 " Thanks to @sarsanaee
 set list
 set listchars=tab:>·,extends:>,precedes:<
- 
+
 " netrw config
 nmap <C-E> :Vexplore<cr>
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 4
 let g:netrw_altv = 1
-let g:netrw_winsize = 25
+let g:netrw_winsize = 15
 augroup ProjectDrawer
   autocmd!
   autocmd VimEnter * :Vexplore
+  autocmd VimEnter * :wincmd l
 augroup END
 
+" tab config
+nmap <C-T> :tabnew<cr>
 
