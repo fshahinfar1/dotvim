@@ -5,6 +5,7 @@
 " set et
 set ts=4
 set sw=4
+setl tw=80
 " ================================
 
 set cc=80
@@ -44,8 +45,9 @@ augroup END
 
 " Indetion policies
 " C
-" autocmd BufNewFile,BufRead set ts=8 set sw=8 set noexpandtab
 autocmd BufNewFile,BufRead *.c set ts=8 sw=8 noexpandtab
+" C++
+autocmd BufNewFile,BufRead *.c set ts=2 sw=2 expandtab
 " JS
 autocmd BufNewFile,BufRead *.js set ts=2 sw=2 expandtab
 " ====================================================
@@ -85,3 +87,9 @@ augroup END
 " tab config
 nmap <C-T> :tabnew<cr>
 
+" Some Keybindings
+nnoremap Y y$
+nnoremap n nzzzv
+nnoremap N Nzzzv
+nnoremap J mzJ`z
+" ====================================================
