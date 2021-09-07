@@ -20,6 +20,13 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
+" Enable enable folding code
+set foldmethod=syntax
+set foldnestmax=10
+set nofoldenable
+set foldlevel=2
+" ====================================================
+
 " Show trailling white space
 :highlight ExtraWhitespace ctermbg=red guibg=red
 :match ExtraWhitespace /\s\+$/
@@ -66,10 +73,12 @@ let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'default'
 " let g:airline_statusline_ontop=1
+" ====================================================
 
 " Thanks to @sarsanaee
 set list
 set listchars=tab:>·,extends:>,precedes:<
+" ====================================================
 
 " netrw config
 nmap <C-E> :Vexplore<cr>
@@ -83,6 +92,7 @@ augroup ProjectDrawer
   autocmd VimEnter * :Vexplore
   autocmd VimEnter * :wincmd l
 augroup END
+" ====================================================
 
 " tab config
 nmap <C-T> :tabnew<cr>
