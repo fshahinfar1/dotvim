@@ -5,6 +5,7 @@
 " set et
 set ts=4
 set sw=4
+set smartindent
 " setl tw=80
 " ================================
 
@@ -103,3 +104,33 @@ nnoremap n nzzzv
 nnoremap N Nzzzv
 nnoremap J mzJ`z
 " ====================================================
+
+" vimrc 2021
+" ===============================
+set exrc
+set guicursor=
+set nohlsearch
+set hidden
+set noerrorbells
+set nowrap
+set noswapfile
+set nobackup
+set undodir=~/.vim/undodir
+set undofile
+set incsearch
+set termguicolors
+set scrolloff=8
+set signcolumn=yes
+
+set cmdheight=2
+
+" Syntastic
+" ===================
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
