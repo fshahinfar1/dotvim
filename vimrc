@@ -135,7 +135,5 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_quiet_messages = {
-			\ "level": "errors",
-			\ "type": "syntax",
 			\ "regex": ["expected identifier or ‘(’ before ‘#pragma’", "expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘#pragma’"], }
 
