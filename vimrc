@@ -98,6 +98,9 @@ let g:netrw_winsize = 15
 " tab config
 nmap <C-T> :tabnew<cr>
 
+" goto definition
+nmap <leader>g <C-w><C-]><C-w>T
+
 " Some Keybindings
 nnoremap Y y$
 nnoremap n nzzzv
