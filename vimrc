@@ -140,3 +140,6 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_quiet_messages = {
 			\ "regex": ["expected identifier or ‘(’ before ‘#pragma’", "expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘#pragma’"], }
 
+" PRISM
+" ====================
+au BufRead,BufNewFile *.prism set filetype=prism
