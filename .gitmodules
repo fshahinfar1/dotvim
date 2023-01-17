@@ -25,3 +25,6 @@
 [submodule "pack/plugins/start/fzf.vim"]
 	path = pack/plugins/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim
+[submodule "pack/plugins/start/vim-llvm"]
+	path = pack/plugins/start/vim-llvm
+	url = https://github.com/chrisyunker/vim-llvm.git
