@@ -58,6 +58,8 @@ autocmd BufNewFile,BufRead *.c set ts=8 sw=8 noexpandtab
 autocmd BufNewFile,BufRead *.cc set ts=2 sw=2 expandtab
 " JS
 autocmd BufNewFile,BufRead *.js set ts=2 sw=2 expandtab
+" Tex
+autocmd BufNewFile,BufRead *.tex set ts=4 sw=4 expandtab filetype=tex
 " ====================================================
 
 " map <C-K> :pyf /home/alireza/clang-format.py<cr>
