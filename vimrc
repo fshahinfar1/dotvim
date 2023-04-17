@@ -142,6 +142,13 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_quiet_messages = {
 			\ "regex": ["expected identifier or ‘(’ before ‘#pragma’", "expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘#pragma’"], }
 
+" CtrlP
+" ====================
+let g:ctrlp_custom_ignore = {
+			\ 'dir':  '\v[\/](build|\.(git|hg|svn))$',
+			\ 'file': '\v\.(exe|so|dll|o|a|zip|tar)$',
+			\ }
+
 " PRISM
 " ====================
 au BufRead,BufNewFile *.prism set filetype=prism
