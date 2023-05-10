@@ -13,9 +13,6 @@ set cc=80
 syntax on
 filetype plugin indent on
 
-" Color scheme
-colorscheme torte
-
 " Vim jump to the last position when reopening a file
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
@@ -56,10 +53,11 @@ augroup END
 autocmd BufNewFile,BufRead *.c set ts=8 sw=8 noexpandtab
 " C++
 autocmd BufNewFile,BufRead *.cc set ts=2 sw=2 expandtab
+autocmd BufNewFile,BufRead *.cpp set ts=2 sw=2 expandtab
 " JS
 autocmd BufNewFile,BufRead *.js set ts=2 sw=2 expandtab
 " Tex
-autocmd BufNewFile,BufRead *.tex set ts=4 sw=4 expandtab filetype=tex
+autocmd BufNewFile,BufRead *.tex set ts=4 sw=4 expandtab filetype=tex spell
 " ====================================================
 
 " map <C-K> :pyf /home/alireza/clang-format.py<cr>
@@ -124,10 +122,10 @@ set undodir=~/.vim/undodir
 set undofile
 set incsearch
 set termguicolors
-set scrolloff=8
+set scrolloff=4
 set signcolumn=yes
 
-set cmdheight=2
+set cmdheight=1
 
 " Syntastic
 " ===================
@@ -152,3 +150,8 @@ let g:ctrlp_custom_ignore = {
 " PRISM
 " ====================
 au BufRead,BufNewFile *.prism set filetype=prism
+
+" Color scheme
+" colorscheme torte
+colorscheme groovy
+set background=dark
