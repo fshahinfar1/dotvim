@@ -155,3 +155,4 @@ au BufRead,BufNewFile *.prism set filetype=prism
 " colorscheme torte
 colorscheme groovy
 set background=dark
+syntax reset
