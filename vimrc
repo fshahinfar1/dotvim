@@ -143,7 +143,7 @@ let g:syntastic_quiet_messages = {
 " CtrlP
 " ====================
 let g:ctrlp_custom_ignore = {
-			\ 'dir':  '\v[\/](build|\.(git|hg|svn))$',
+			\ 'dir':  '\v[\/](__pycache__|venv|build|\.(git|hg|svn))$',
 			\ 'file': '\v\.(exe|so|dll|o|a|zip|tar)$',
 			\ }
 
@@ -156,3 +156,4 @@ au BufRead,BufNewFile *.prism set filetype=prism
 colorscheme groovy
 set background=dark
 syntax reset
+hi TabLineSel ctermfg=Red ctermbg=Yellow
