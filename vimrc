@@ -37,7 +37,7 @@ set secure
 map <F3> :%s/\s\+$//e<CR>
 
 " Open file in Mousepad
-map <F4> :! mousepad %<CR>
+map <F4> :! xdg-open %<CR>
 
 " Automatice Hybrid Line Number
 " From: https://jeffkreeftmeijer.com/vim-number/
@@ -58,22 +58,6 @@ autocmd BufNewFile,BufRead *.cpp set ts=2 sw=2 expandtab
 autocmd BufNewFile,BufRead *.js set ts=2 sw=2 expandtab
 " Tex
 autocmd BufNewFile,BufRead *.tex set ts=4 sw=4 expandtab filetype=tex spell
-" ====================================================
-
-" map <C-K> :pyf /home/alireza/clang-format.py<cr>
-" imap <C-K> <c-o>:pyf /home/alireza/clang-format.py<cr>
-
-" map <C-K> :py3f /home/alireza/.vim/clang-format.py<cr>
-" imap <C-K> <c-o>:py3f /home/alireza/.vim/clang-format.py<cr>
-
-" ====================================================
-" airline config
-" ====================================================
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
-let g:airline#extensions#tabline#formatter = 'default'
-" let g:airline_statusline_ontop=1
 " ====================================================
 
 " Thanks to @sarsanaee
@@ -111,7 +95,7 @@ nnoremap J mzJ`z
 " vimrc 2021
 " ===============================
 set exrc
-set guicursor=
+" set guicursor=
 set nohlsearch
 set hidden
 set noerrorbells
@@ -123,8 +107,7 @@ set undofile
 set incsearch
 set termguicolors
 set scrolloff=4
-set signcolumn=yes
-
+set signcolumn=number
 set cmdheight=1
 
 " Syntastic
@@ -151,9 +134,10 @@ let g:ctrlp_custom_ignore = {
 " ====================
 au BufRead,BufNewFile *.prism set filetype=prism
 
-" Color scheme
-" colorscheme torte
-colorscheme groovy
-set background=dark
-syntax reset
-hi TabLineSel ctermfg=Red ctermbg=Yellow
+" Airline config
+" ====================================================
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#formatter = 'default'
+" let g:airline_statusline_ontop=1
