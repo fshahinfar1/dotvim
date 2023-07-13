@@ -109,6 +109,7 @@ set termguicolors
 set scrolloff=4
 set signcolumn=number
 set cmdheight=1
+set background=dark
 
 " Syntastic
 " ===================
