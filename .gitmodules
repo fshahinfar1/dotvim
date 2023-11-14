@@ -40,3 +40,6 @@
 [submodule "pack/plugins/start/ale"]
 	path = pack/plugins/start/ale
 	url = https://github.com/dense-analysis/ale
+[submodule "pack/plugins/start/python-syntax"]
+	path = pack/plugins/start/python-syntax
+	url = https://github.com/vim-python/python-syntax
