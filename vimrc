@@ -63,6 +63,7 @@ autocmd BufNewFile,BufRead *.tex set ts=4 sw=4 expandtab filetype=tex spell
 " Thanks to @sarsanaee
 set list
 set listchars=tab:>·,extends:>,precedes:<
+:highlight SpecialKey ctermfg=silver guifg=silver
 " ====================================================
 
 " netrw config
@@ -142,3 +143,6 @@ let g:airline#extensions#tabline#left_sep = ' '
 let g:airline#extensions#tabline#left_alt_sep = '|'
 let g:airline#extensions#tabline#formatter = 'default'
 " let g:airline_statusline_ontop=1
+
+
+let g:python_highlight_all=1
