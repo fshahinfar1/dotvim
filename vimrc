@@ -63,7 +63,7 @@ autocmd BufNewFile,BufRead *.tex set ts=4 sw=4 expandtab filetype=tex spell
 " Thanks to @sarsanaee
 set list
 set listchars=tab:>·,extends:>,precedes:<
-:highlight SpecialKey ctermfg=silver guifg=silver
+:highlight SpecialKey ctermfg=LightGray guifg=LightGray
 " ====================================================
 
 " netrw config
