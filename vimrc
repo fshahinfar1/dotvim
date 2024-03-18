@@ -146,3 +146,6 @@ let g:airline#extensions#tabline#formatter = 'default'
 
 
 let g:python_highlight_all=1
+
+# enable mode line :)
+set modeline
