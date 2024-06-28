@@ -43,3 +43,6 @@
 [submodule "pack/plugins/start/python-syntax"]
 	path = pack/plugins/start/python-syntax
 	url = https://github.com/vim-python/python-syntax
+[submodule "pack/plugins/start/gruvbox"]
+	path = pack/plugins/start/gruvbox
+	url = https://github.com/morhetz/gruvbox.git

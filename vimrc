@@ -50,6 +50,7 @@ augroup END
 
 " Indetion policies
 " C
+autocmd BufNewFile,BufRead *.h set filetype=c
 autocmd BufNewFile,BufRead *.c set ts=8 sw=8 noexpandtab
 " C++
 autocmd BufNewFile,BufRead *.cc set ts=2 sw=2 expandtab
@@ -57,13 +58,13 @@ autocmd BufNewFile,BufRead *.cpp set ts=2 sw=2 expandtab
 " JS
 autocmd BufNewFile,BufRead *.js set ts=2 sw=2 expandtab
 " Tex
-autocmd BufNewFile,BufRead *.tex set ts=4 sw=4 expandtab filetype=tex spell
+autocmd BufNewFile,BufRead *.tex set ts=2 sw=2 expandtab filetype=tex spell wrap
 " ====================================================
 
 " Thanks to @sarsanaee
 set list
 set listchars=tab:>·,extends:>,precedes:<
-:highlight SpecialKey ctermfg=LightGray guifg=LightGray
+" :highlight SpecialKey ctermfg=LightGray guifg=LightGray
 " ====================================================
 
 " netrw config
@@ -145,7 +146,8 @@ let g:airline#extensions#tabline#formatter = 'default'
 " let g:airline_statusline_ontop=1
 
 
-let g:python_highlight_all=1
+" let g:python_highlight_all=1
 
 " enable mode line :)
 set modeline
+colorscheme gruvbox
