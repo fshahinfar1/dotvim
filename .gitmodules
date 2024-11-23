@@ -46,3 +46,6 @@
 [submodule "pack/plugins/start/gruvbox"]
 	path = pack/plugins/start/gruvbox
 	url = https://github.com/morhetz/gruvbox.git
+[submodule "pack/plugins/opt/matchit"]
+	path = pack/plugins/opt/matchit
+	url = https://github.com/chrisbra/matchit

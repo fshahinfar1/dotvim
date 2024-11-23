@@ -150,4 +150,4 @@ let g:airline#extensions#tabline#formatter = 'default'
 
 " enable mode line :)
 set modeline
-colorscheme gruvbox
+" colorscheme gruvbox
