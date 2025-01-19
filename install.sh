@@ -15,7 +15,7 @@ fi
 # if [ ! `command -v clang &> /dev/null` ]
 # then
 # 	echo You need to install clang and clang-format.
-# 	echo After installing that rerty. 
+# 	echo After installing that rerty.
 # 	exit
 # fi
 
@@ -42,3 +42,6 @@ fi
 # place new vim config
 cp -r ../dotvim/ $HOME/.vim/
 
+# place neovim config
+mkdir -p "$HOME/.config/nvim/"
+cp ./nvim_config/* "$HOME/.config/nvim/"

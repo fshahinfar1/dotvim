@@ -36,10 +36,18 @@ call plug#begin("~/vim/plugged")
  Plug 'preservim/nerdcommenter'
  Plug 'mhinz/vim-startify'
  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+ " generate tags
  Plug 'ludovicchabant/vim-gutentags'
  Plug 'skywind3000/gutentags_plus'
+ " git support
  Plug 'tpope/vim-fugitive'
+ " ctl+p file search feature
  Plug 'kien/ctrlp.vim'
+ " snippet support
+ Plug 'rafamadriz/friendly-snippets'
+ "Plug 'neoclide/coc-snippets'
+ "Plug 'hrsh7th/vim-vsnip'
+ "Plug 'hrsh7th/vim-vsnip-integ'
 call plug#end()
 
 " Key mapping
@@ -76,3 +84,22 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
  
 " Configure the colorshceme
 :colorscheme dracula
+
+" Coc-Snippet Configuration
+" Use <C-l> for trigger snippet expand.
+imap <C-l> <Plug>(coc-snippets-expand)
+
+" Use <C-j> for select text for visual placeholder of snippet.
+vmap <C-j> <Plug>(coc-snippets-select)
+
+" Use <C-j> for jump to next placeholder, it's default of coc.nvim
+let g:coc_snippet_next = '<c-j>'
+
+" Use <C-k> for jump to previous placeholder, it's default of coc.nvim
+let g:coc_snippet_prev = '<c-k>'
+
+" Use <C-j> for both expand and jump (make expand higher priority.)
+imap <C-j> <Plug>(coc-snippets-expand-jump)
+
+" Use <leader>x for convert visual selected code to snippet
+xmap <leader>x  <Plug>(coc-convert-snippet)
