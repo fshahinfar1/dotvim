@@ -28,26 +28,33 @@ set relativenumber
 
 call plug#begin("~/vim/plugged")
  " Plugin Section
- Plug 'dracula/vim'
- Plug 'ryanoasis/vim-devicons'
- Plug 'SirVer/ultisnips'
- Plug 'honza/vim-snippets'
- Plug 'scrooloose/nerdtree'
- Plug 'preservim/nerdcommenter'
  Plug 'mhinz/vim-startify'
- Plug 'neoclide/coc.nvim', {'branch': 'release'}
+ Plug 'ryanoasis/vim-devicons'
+ Plug 'preservim/nerdcommenter'
+ Plug 'scrooloose/nerdtree'
+
  " generate tags
  Plug 'ludovicchabant/vim-gutentags'
  Plug 'skywind3000/gutentags_plus'
+
  " git support
  Plug 'tpope/vim-fugitive'
+
  " ctl+p file search feature
  Plug 'kien/ctrlp.vim'
+
  " snippet support
  Plug 'rafamadriz/friendly-snippets'
- "Plug 'neoclide/coc-snippets'
- "Plug 'hrsh7th/vim-vsnip'
- "Plug 'hrsh7th/vim-vsnip-integ'
+ Plug 'SirVer/ultisnips'
+ Plug 'honza/vim-snippets'
+ 
+ " Syntax highlig
+ Plug 'neoclide/coc.nvim', {'branch': 'release'}
+ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+ " Color Scheme
+ " Plug 'dracula/vim'
+ Plug 'rebelot/kanagawa.nvim'
 call plug#end()
 
 " Key mapping
@@ -83,7 +90,8 @@ vnoremap <A-k> :m '<-2<CR>gv=gv
 " :vnoremap kj <Esc>
  
 " Configure the colorshceme
-:colorscheme dracula
+":colorscheme dracula
+colorscheme kanagawa
 
 " Coc-Snippet Configuration
 " Use <C-l> for trigger snippet expand.
